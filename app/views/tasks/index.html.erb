@@ -1,0 +1,28 @@
+
+<h1>To Do List</h1>
+
+<table id="list">
+  <tr>
+	<th>Task</th>
+	<th>Completion Date</th>
+	<th>Completed</th>
+	<th></th>
+	<th></th>
+	<th></th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+	<td><%= task.name %></td>
+	<td><%= task.completion_date.strftime("%a - %b. %d, %Y") %></td>
+	<td><%= task.date_completed %></td>
+	<td><%= link_to 'Show', task %></td>
+	<td><%= link_to 'Edit', edit_task_path(task) %></td>
+	<td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TodoList</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrapper">
+<div class="nav">
+	<ul>
+		<li><%= link_to 'My List', :tasks, :action => :index %></li>
+		<li><%= link_to 'New Task', new_task_path %></li>
+		<li><%= link_to 'About the Author', :controller => :about_author, :action => :author %></li>
+	</ul>
+</div>
+<%= yield %>
+</div>
+</body>
+</html>

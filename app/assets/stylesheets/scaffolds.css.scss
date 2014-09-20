@@ -1,0 +1,193 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+
+  text-decoration: none;
+  color: #84a8df;
+  &:visited {
+    color: #84a8df;
+  }
+  &:hover {
+    color: #000;
+    /*background-color: #fff;*/
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+$body-bg: image-url('light-noise.jpg');
+$box-shadow: 3px 3px 5px #000;
+$box-shadow-table: 1px 1px 3px #000;
+$font-h1: bold 200%/1.3 'Chewy', 'mv boli', verdana, 'times new roman';
+$font-h2: bold 22px/1.3 'Chewy', 'mv boli', verdana, 'times new roman';
+$font-li: normal 14px/1.3 'Chewy', 'mv boli', verdana, 'times new roman';
+$font-p: normal 14px/1.3 'Chewy', 'mv boli', verdana, 'times new roman';
+$font-a: normal 16px/1.3 'Chewy', 'mv boli', verdana, 'times new roman';
+
+body{
+	margin:0;
+	background-image: $body-bg;
+
+}
+
+h1{
+	font: $font-h1;
+	text-align:center;
+}
+
+h2{
+	font: $font-h2;
+
+}
+
+p{
+	font: $font-p;
+}
+
+li{
+	list-style: decimal;
+	margin: 4px 2px;
+	font: $font-li;
+}
+
+#wrapper{
+
+	margin: 0 auto;
+	margin-top: 4%;
+	border: 10px solid #2d2d2d;
+	width: 80%;
+	min-height: 600px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: $box-shadow;
+	padding-top: 1%;
+}
+
+.nav a {
+
+  word-spacing: -5px;
+  font: $font-a;
+  padding: .5% 1%;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #84a8df;
+  &:visited {
+    color: #84a8df;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #3b3b3b;
+  }
+}
+
+.nav li{
+	list-style: none;
+	display: inline;
+}
+
+#list{
+	width: 90%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	box-shadow: $box-shadow-table;
+}
+
+#list tr td:first-child, th:first-child{
+	padding-left: 1%;
+}
+
+#list th{
+	font: $font-a;
+}
+
+#list td, th{
+	text-align: left;
+	padding: .5% 0;
+	word-wrap: break-word;
+}
+
+input[type="submit"]{
+	border-radius: 10px;
+	padding: .5% .5%;
+	font: $font-li;
+}
+
+/*add new task page*/
+#taskWrapper{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+#task_name{
+	width: 80%;
+	border-radius: 10px;
+	padding: .5% .5%;
+}
+
+#linkWrapper{
+	width: 10%;
+	margin: 0 auto;
+
+}
+
+#showWrapper{
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
